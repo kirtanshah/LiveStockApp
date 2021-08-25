@@ -1,7 +1,7 @@
 import { Injectable } from "@angular/core";
 import { EMPTY, Subject, Observer, Observable } from 'rxjs';
 
-export const url = "wss://stocks.hulqmedia.com/";
+export const url = "ws://stocks.hulqmedia.com/";
 @Injectable()
 export class WebsocketService {
   public messages: Subject<any>;
