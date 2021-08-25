@@ -9,7 +9,5 @@ import { WebsocketService } from './websocket.service';
 export class AppComponent{
   title = 'live-stock-app';
 
-  constructor(private service: WebsocketService) {
-    //this.service.connect();
-  }
+  constructor(private service: WebsocketService) {}
 }

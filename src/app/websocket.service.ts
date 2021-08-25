@@ -1,6 +1,4 @@
 import { Injectable } from "@angular/core";
-//import { webSocket, WebSocketSubject } from 'rxjs/webSocket';
-//import { catchError, tap, switchAll } from 'rxjs/operators';
 import { EMPTY, Subject, Observer, Observable } from 'rxjs';
 
 export const url = "ws://stocks.hulqmedia.com/";
