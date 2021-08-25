@@ -16,7 +16,7 @@
             'goRed': oldData[data.key] > data.value,
             'goWhite': oldData[data.key] === data.value
             }">{{data.value.toFixed(2)}}</td>
-        <td>{{((oldData[data.key] < data.value || oldData[data.key] > data.value) ? setDate() : defaultDate) | amTimeAgo}}</td>
+        <td>{{((oldData[data.key] < data.value || oldData[data.key] > data.value) ? getDate() : defaultDate) | amTimeAgo}}</td>
       </tr>
     </tbody>
   </table>

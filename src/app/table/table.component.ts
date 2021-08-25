@@ -20,7 +20,7 @@ export class TableComponent implements OnInit {
     });
   }
 
-  private setDate(oldData, newData) {
+  private getDate() {
     return new Date().toLocaleString();
   }
 
