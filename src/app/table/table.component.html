@@ -1,0 +1,22 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Stock Name</th>
+        <th scope="col">Price</th>
+        <th scope="col">Update Time</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of liveData | keyvalue; let i = index">
+        <th>{{i}}</th>
+        <td>{{data.key}}</td>
+        <td [ngClass]="{
+            'goGreen': oldData[data.key] < data.value,
+            'goRed': oldData[data.key] > data.value,
+            'goWhite': oldData[data.key] === data.value
+            }">{{data.value.toFixed(2)}}</td>
+        <td>{{((oldData[data.key] < data.value || oldData[data.key] > data.value) ? setDate() : defaultDate) | amTimeAgo}}</td>
+      </tr>
+    </tbody>
+  </table>
